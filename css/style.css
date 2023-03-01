@@ -1,0 +1,58 @@
+@font-face {
+    font-family: BebasNeue-Regular;
+    src: url(../assets/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: CourierPrime-Bold;
+    src: url(../assets/Courier_Prime/CourierPrime-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-VariableFont;
+    src: url(../assets/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Courier Prime', monospace;
+font-family: 'Open Sans', sans-serif; */
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: red;
+}
+
+header nav {
+    margin-left: 728px;
+
+}
+
+header nav a {
+    margin-right: 121px;
+
+    font-family: 'BebasNeue-Regular'; 
+    text-transform: uppercase;
+    color: white;
+}
+
+/* main */
+
+main {
+    height: 740px;
+    background-color: #d9d9d9;
+}
+
+#desenvolvimento {
+    color: white;
+    font-family: 'BebasNeue-Regular';
+}
