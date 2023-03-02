@@ -1,17 +1,17 @@
 @font-face {
     font-family: BebasNeue-Regular;
-    src: url(../assets/Bebas_Neue/BebasNeue-Regular.ttf);
+    src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
 
 @font-face {
     font-family: CourierPrime-Bold;
-    src: url(../assets/Courier_Prime/CourierPrime-Bold.ttf);
+    src: url(../assets/fonts/Courier_Prime/CourierPrime-Bold.ttf);
 }
 
 @font-face {
     font-family: OpenSans-VariableFont;
-    src: url(../assets/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
-}
+    src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}   
 
 /* font-family: 'Bebas Neue', cursive;
 font-family: 'Courier Prime', monospace;
@@ -24,35 +24,153 @@ font-family: 'Open Sans', sans-serif; */
     box-sizing: border-box;
 }
 
+/* centraliza conteudos */
+.layout-grid{
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 3px solid green;
+}
+
 /* cabeçalho */
 header {
-    display: flex;
-    align-items: center;
-    height: 80px;
+    height: 60px;
     background-color: red;
+    border: 2px solid blue;
+}
+
+/* flexbox no cabeçalho */
+header .header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 header nav {
-    margin-left: 728px;
-
+    display: flex;
+    justify-content: space-around;
+    height: 22px;
+    width: 591px;
+    border: 2px solid black;
 }
 
 header nav a {
-    margin-right: 121px;
-
-    font-family: 'BebasNeue-Regular'; 
+    font-family: 'BebasNeue-Regular';
     text-transform: uppercase;
+    text-decoration: none;
     color: white;
+    /* letter-spacing: 2px; */
+}
+
+/* ao passar o mouse */
+header nav a:hover {
+    background-color: white;
+    color: red;
+}
+
+#link-inicio {
+    color: black;
 }
 
 /* main */
 
-main {
+.introducao {
     height: 740px;
     background-color: #d9d9d9;
+    border: 5px solid yellow;
 }
 
-#desenvolvimento {
+section .desenvolvimento h1 {
     color: white;
     font-family: 'BebasNeue-Regular';
+    font-weight: normal;
+    font-size: 96px;
+    width: 545px;
+    height: 230px;
+
+    position: relative;
+    left: 121px;
+    top: 226px;
 }
+
+section .desenvolvimento h2 {
+    color: #F9003D;
+    font-family: 'Courier New';
+    font-weight: bold;
+    font-size: 53px;
+    width: 544px;
+    height: 68px;
+
+    position: relative;
+    left: 121px;
+    top: 300px;
+}
+
+.sobre {
+    height: 800px;
+    background-color: #080324;
+}
+
+section .projetos{
+    color: #F9003D;
+    font-family: 'BebasNeue-Regular';
+    font-size: 64px;
+    font-weight: normal;
+
+    width: 384px;
+    height: 77px;
+
+    position: relative;
+    left: 120px;
+    top: 64px;
+}
+
+section .alunos {
+    color: #FFAF00;
+    font-family: 'BebasNeue-Regular';
+    font-size: 64px;
+    font-weight: normal;
+
+    width: 557px;
+    height: 154px;
+
+    position: relative;
+    left: 728px;
+    top: 257px;
+}
+
+section .sobrediv h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 24px;
+
+    width: 288px;
+    height: 34px;
+
+    position: relative;
+    left: 728px;
+    top: 50px;
+}
+
+section .sobrediv p {
+    color: white;
+    font-family: 'OpenSans-VariableFont';
+    font-weight: normal;
+    font-size: 18px;
+
+    width: 592px;
+    height: 252px;
+}
+
+
+
+/* main .banner {
+    width: 100%;
+    height: 740px;
+    background-color: black;
+    color: white;
+
+    background-image: url(/assets/images/imagem-fundo-banner.png);
+} */
