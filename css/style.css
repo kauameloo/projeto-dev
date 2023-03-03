@@ -30,7 +30,7 @@ font-family: 'Open Sans', sans-serif; */
     height: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 /* cabeçalho */
@@ -75,102 +75,139 @@ header nav a:hover {
 
 /* main */
 
-.introducao {
+main .banner {
+    width: 100%;
     height: 740px;
-    background-color: #d9d9d9;
-    border: 5px solid yellow;
+    background-color: #080324;
+    color: white;
+
+    background-image: url(../assets/images/imagem-fundo-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-section .desenvolvimento h1 {
+.desenvolvimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* DESENVOLVIMENTO DE SISTEMAS */
+article .desenvolvimento h1 {
     color: white;
     font-family: 'BebasNeue-Regular';
     font-weight: normal;
     font-size: 96px;
     width: 545px;
     height: 230px;
+    /* border: 5px solid peru; */
 
-    position: relative;
-    left: 121px;
-    top: 226px;
+    display: flex;
+
 }
 
-section .desenvolvimento h2 {
+/* SENAI INFORMATICA */
+article .desenvolvimento h2 {
     color: #F9003D;
     font-family: 'Courier New';
     font-weight: bold;
     font-size: 53px;
-    width: 544px;
-    height: 68px;
+    /* border: 5px solid palegreen; */
 
-    position: relative;
-    left: 121px;
-    top: 300px;
+    margin-top: 29px;
 }
 
+#linha {
+    width: 545px;
+    height: 1px;
+    margin-top: 16px;
+    background-color: #FFAF00;
+}
+
+#mouse {
+    width: 80px;
+    height: 80px;
+    margin-top: 29px;
+}
+
+
+/* main part sobre */
 .sobre {
     height: 800px;
     background-color: #080324;
+    
 }
 
-section .projetos{
+.sobrediv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 5px solid purple; 
+}
+
+.sobresection {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+
+    width: fit-content;
+
+}
+
+.projetos{
     color: #F9003D;
     font-family: 'BebasNeue-Regular';
     font-size: 64px;
     font-weight: normal;
 
-    width: 384px;
-    height: 77px;
+    display: flex;
+    align-self: flex-start;
 
-    position: relative;
-    left: 120px;
-    top: 64px;
+    margin-bottom: 64px;
+
+    border: 5px solid black; 
 }
 
-section .alunos {
+.alunos {
     color: #FFAF00;
     font-family: 'BebasNeue-Regular';
     font-size: 64px;
     font-weight: normal;
-
     width: 557px;
-    height: 154px;
 
-    position: relative;
-    left: 728px;
-    top: 257px;
+    display: flex;
 }
 
-section .sobrediv h2 {
+.sobrediv h2 {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 24px;
 
-    width: 288px;
-    height: 34px;
+    display: flex;
 
-    position: relative;
-    left: 728px;
-    top: 50px;
 }
 
-section .sobrediv p {
+.sobrediv p {
     color: white;
     font-family: 'OpenSans-VariableFont';
     font-weight: normal;
     font-size: 18px;
+    border: 2px solid blue;
 
     width: 592px;
-    height: 252px;
+
+
 }
 
+#imagemsobre {
+    width: 491px;
+    height: 476px;
+    border: 2px solid blue;
+
+    display: flex;
+    justify-self: center;
 
 
-/* main .banner {
-    width: 100%;
-    height: 740px;
-    background-color: black;
-    color: white;
-
-    background-image: url(/assets/images/imagem-fundo-banner.png);
-} */
+}
