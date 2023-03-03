@@ -60,6 +60,7 @@ header nav a {
     text-transform: uppercase;
     text-decoration: none;
     color: white;
+    font-size: 18px;
     /* letter-spacing: 2px; */
 }
 
@@ -78,22 +79,27 @@ header nav a:hover {
 main .banner {
     width: 100%;
     height: 740px;
-    background-color: #080324;
     color: white;
 
     background-image: url(../assets/images/imagem-fundo-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
 }
 
-.desenvolvimento {
+main .banner-flex {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
-/* DESENVOLVIMENTO DE SISTEMAS */
-article .desenvolvimento h1 {
+/* BANNER INFO */
+main .banner #bannerinfo {
+    width: 550px;
+    border: 2px solid darkcyan;
+}
+
+/* BANNER INFO DESENVOLVIMENTO DE SISTEMAS */
+article #bannerinfo h1 {
     color: white;
     font-family: 'BebasNeue-Regular';
     font-weight: normal;
@@ -102,12 +108,10 @@ article .desenvolvimento h1 {
     height: 230px;
     /* border: 5px solid peru; */
 
-    display: flex;
-
 }
 
-/* SENAI INFORMATICA */
-article .desenvolvimento h2 {
+/* BANNER INFO SENAI INFORMATICA */
+article #bannerinfo h2 {
     color: #F9003D;
     font-family: 'Courier New';
     font-weight: bold;
@@ -117,6 +121,7 @@ article .desenvolvimento h2 {
     margin-top: 29px;
 }
 
+/* LINHA LARANJA */
 #linha {
     width: 545px;
     height: 1px;
@@ -124,6 +129,7 @@ article .desenvolvimento h2 {
     background-color: #FFAF00;
 }
 
+/* IMAGEM MOUSE */
 #mouse {
     width: 80px;
     height: 80px;
@@ -138,23 +144,40 @@ article .desenvolvimento h2 {
     
 }
 
-.sobrediv {
+.sobre-flex {
     display: flex;
-    flex-direction: column;
     justify-content: center;
 
-    border: 5px solid purple; 
+    border: 2px solid plum;
 }
 
-.sobresection {
+/* BOX SOBRE INTEIRO */
+/* #sobrediv {
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid purple; 
+} */
+
+#sobrediv-imagem {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border: 2px solid gray;
+
+}
+
+/* BOX PROJETOS ALUNOS PARTICIPANTES */
+#sobresection {
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
 
+    
     width: fit-content;
+    border: 5px solid yellow; 
 
 }
 
+/* TITULO PROJETOS */
 .projetos{
     color: #F9003D;
     font-family: 'BebasNeue-Regular';
@@ -164,11 +187,10 @@ article .desenvolvimento h2 {
     display: flex;
     align-self: flex-start;
 
-    margin-bottom: 64px;
-
     border: 5px solid black; 
 }
 
+/* TITULO ALUNOS */
 .alunos {
     color: #FFAF00;
     font-family: 'BebasNeue-Regular';
@@ -179,7 +201,8 @@ article .desenvolvimento h2 {
     display: flex;
 }
 
-.sobrediv h2 {
+/* PARTICIPANTES */
+#sobresection h2 {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -189,7 +212,7 @@ article .desenvolvimento h2 {
 
 }
 
-.sobrediv p {
+#sobresection p {
     color: white;
     font-family: 'OpenSans-VariableFont';
     font-weight: normal;
@@ -201,13 +224,50 @@ article .desenvolvimento h2 {
 
 }
 
-#imagemsobre {
-    width: 491px;
-    height: 476px;
-    border: 2px solid blue;
 
+/* INFO */
+main .info {
+    width: 100%;
+    height: 200px;
+
+    /* background-image: url(../assets/images/imagem-fundo-info.png); */
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border: 3px solid seagreen;
+}
+
+.infosection {
     display: flex;
-    justify-self: center;
+    justify-content: space-around;
+}
 
+div .infosection h2{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.local {
+    width: 289px;
+    height: 100px;
+    border: 2px solid #A259F7;
+
+}
+
+.duracao {
+    width: 289px;
+    height: 100px;
+    border: 2px solid #A259F7;
+
+}
+
+.desafios {
+    width: 289px;
+    height: 100px;
+    border: 2px solid #A259F7;
 
 }
