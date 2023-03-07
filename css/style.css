@@ -11,21 +11,28 @@
 @font-face {
     font-family: OpenSans-VariableFont;
     src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
-}   
+}
 
 /* font-family: 'Bebas Neue', cursive;
 font-family: 'Courier Prime', monospace;
 font-family: 'Open Sans', sans-serif; */
 
-/* reset */
+/* reset css*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* DESKTOP FIRST */
+/* esconde o icone do hamburguer */
+header #menu-hamburguer {
+    display: none;
+}
+
 /* centraliza conteudos */
-.layout-grid{
+.layout-grid {
     width: 100%;
     height: 100%;
     max-width: 1200px;
@@ -44,7 +51,7 @@ body {
 /* cabeçalho */
 header {
     height: 60px;
-    background-color: red;
+    background-color: #F9003D;
     /* border: 2px solid blue; */
 }
 
@@ -64,6 +71,11 @@ header nav {
 }
 
 header nav a {
+    display: flex;
+    align-items: center;
+
+    padding: 15px 25px;
+    border-radius: 5px;
     font-family: 'BebasNeue-Regular';
     text-transform: uppercase;
     text-decoration: none;
@@ -78,8 +90,16 @@ header nav a:hover {
     color: red;
 }
 
-#link-inicio {
-    color: black;
+/* logo senai */
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#senailogo {
+    width: 15%;
+    height: 15%;
 }
 
 /* main */
@@ -159,11 +179,12 @@ article #bannerinfo h2 {
 .sobre {
     padding: 60px 0;
 }
+
 .sobre .sobre-flex {
     display: flex;
     justify-content: space-between;
     /* border: 2px solid red; */
-    
+
 }
 
 
@@ -331,7 +352,52 @@ article #bannerinfo h2 {
     font-size: 18px;
 }
 
-#senailogo {
-    width: 15%;
-    height: 15%;
+
+
+
+/* smartphone */
+@media screen and (max-width: 767px) {
+    main {
+        display: none;
+    }
+
+    header nav {
+        position: fixed;
+        top: 60px;
+        left: 0;
+
+        width: 80vw;
+        max-width: 360px;
+        height: 100vh;
+
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #F9003D;
+    }
+
+    header nav a {
+        justify-content: center;
+
+        width:  80%;
+        margin-bottom: 30px;
+
+        border-bottom: 2px solid white;
+        border-radius: 0;
+        font-size: 24px;
+    }
+
+    header nav a:hover {
+        background-color: white;
+        color: red;
+        border-radius: 5px;
+    }
+    
+
+    /* mostra o icone de barras */
+    header #menu-hamburguer {
+        display: block;
+    }
 }
